@@ -3,3 +3,6 @@ Code from the live stream Lunchmed.Net 2019-10-15 (in swedish) where we try out 
 
 Se streamen här: 
 https://www.youtube.com/watch?v=KAuMiTPKhl4
+
+Läs mer på 
+https://lunchmed.net
