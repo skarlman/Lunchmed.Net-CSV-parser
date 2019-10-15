@@ -1,0 +1,5 @@
+*.user
+.vs/SpanStringParser/DesignTimeBuild/
+.vs/
+SpanStringParser/bin/
+SpanStringParser/obj/
