@@ -3,3 +3,6 @@
 .vs/
 SpanStringParser/bin/
 SpanStringParser/obj/
+*.ncrunchsolution
+bin/
+obj/
