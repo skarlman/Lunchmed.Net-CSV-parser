@@ -6,3 +6,5 @@ SpanStringParser/obj/
 *.ncrunchsolution
 bin/
 obj/
+_NCrunch_SpanStringParser/SpanStringParser.crunchsolution.cache
+_NCrunch_SpanStringParser/

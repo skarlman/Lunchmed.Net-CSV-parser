@@ -8,9 +8,9 @@ namespace SpanStringParser
     {
         static async Task Main(string[] args)
         {
-            var result = await new FileParser(new StringSplitRowParser()).ParseFiles(@"data");
+            var result = await new AsyncFileParser(new StringSplitRowParser(), new FileRetriever()).ParseFiles(@"data");
 
-            result.ForEach(r => Console.WriteLine($"{r.Item1}: {r.Item2}"));
+            result.ForEach(r => Console.WriteLine($"{r.timestamp}: {r.csvValue}"));
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface ICsvRowParser
     {
-        (string, string) ParseRow(string row);
+        (string timestamp, string csvValue) ParseRow(string row);
     }
 }

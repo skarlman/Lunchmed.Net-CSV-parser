@@ -1,22 +1,21 @@
-using NUnit.Framework;
 using SpanStringParser.RowParsers;
+using Xunit;
 
 namespace SpanStringParser.Tests
 {
-    public class SpanStringParserTest
+    public class CsvRowParserTest
     {
         public class When_given_proper_csv_row
         {
-            [Test]
-            public void Then_col_0_is_timestamp_and_col_5_is_value() => 
-                Assert.AreEqual(("2019-07-04 06:10:01", "528.193428"), _result);
+            [Fact]
+            public void Then_col_0_is_timestamp_and_col_5_is_value() =>
+                Assert.Equal(("2019-07-04 06:10:01", "528.193428"), _result);
 
 
-
-            [SetUp]
-            public void SUTAction()
+            public When_given_proper_csv_row()
             {
                 _result = SUT.ParseRow(_row);
+
             }
 
             private (string, string) _result;

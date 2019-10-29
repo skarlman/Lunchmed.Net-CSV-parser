@@ -27,14 +27,14 @@ namespace SpanStringParser.Benchmarker
         [Benchmark]
         public async Task IAsyncEnumerableSpanParser()
         {
-            var result = await new FileParser(new SpanRowParser()).ParseFiles(@"data");
+            var result = await new AsyncFileParser(new SpanRowParser(), new FileRetriever()).ParseFiles(@"data");
 
         }
 
         [Benchmark]
         public async Task StringSplitParserAsync()
         {
-            var result = await new FileParser(new StringSplitRowParser()).ParseFiles(@"data");
+            var result = await new AsyncFileParser(new StringSplitRowParser(), new FileRetriever()).ParseFiles(@"data");
 
         }
 

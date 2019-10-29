@@ -4,7 +4,7 @@ namespace SpanStringParser.RowParsers
 {
     public class SpanRowParser : ICsvRowParser
     {
-        public (string, string) ParseRow(string row)
+        public (string timestamp, string csvValue) ParseRow(string row)
         {
             var rowSpan = row.AsSpan();
 
