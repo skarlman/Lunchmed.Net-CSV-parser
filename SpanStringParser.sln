@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser", "SpanStr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.Benchmarker", "SpanStringParser.Benchmarker\SpanStringParser.Benchmarker.csproj", "{E9EFBA57-521A-47DD-8C57-315427D1DB5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanStringParser.Tests", "SpanStringParser.Tests\SpanStringParser.Tests.csproj", "{FFFAA634-6BDD-4C7B-8542-862A90E23345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.Tests", "SpanStringParser.Tests\SpanStringParser.Tests.csproj", "{FFFAA634-6BDD-4C7B-8542-862A90E23345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanStringParser.IntegrationTests", "SpanStringParser.IntegrationTests\SpanStringParser.IntegrationTests.csproj", "{13804170-243F-4E05-8508-84FC9F9EF926}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FFFAA634-6BDD-4C7B-8542-862A90E23345}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFFAA634-6BDD-4C7B-8542-862A90E23345}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFFAA634-6BDD-4C7B-8542-862A90E23345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13804170-243F-4E05-8508-84FC9F9EF926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13804170-243F-4E05-8508-84FC9F9EF926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13804170-243F-4E05-8508-84FC9F9EF926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13804170-243F-4E05-8508-84FC9F9EF926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

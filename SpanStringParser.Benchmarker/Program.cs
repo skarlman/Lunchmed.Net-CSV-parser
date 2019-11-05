@@ -18,30 +18,30 @@ namespace SpanStringParser.Benchmarker
     public class ParserBenchmarker
     {
         [Benchmark]
-        public void SyncSpanParser()
+        public void SyncFileRead_SpanParser()
         {
-            var result = new FileParser(new SpanRowParser()).ParseFilesSync(@"data");
+            var result = new FileParser(new SpanRowParser(), new FileRetriever()).ParseFilesSync(@"data");
 
         }
 
         [Benchmark]
-        public async Task IAsyncEnumerableSpanParser()
+        public async Task IAsyncEnumerableFileRead_SpanParser()
         {
             var result = await new AsyncFileParser(new SpanRowParser(), new FileRetriever()).ParseFiles(@"data");
 
         }
 
         [Benchmark]
-        public async Task StringSplitParserAsync()
+        public async Task IAsyncEnumerableFileRead_StringSplitParser()
         {
             var result = await new AsyncFileParser(new StringSplitRowParser(), new FileRetriever()).ParseFiles(@"data");
 
         }
 
         [Benchmark]
-        public void StringSplitParserSync()
+        public void SyncFileRead_StringSplitParser()
         {
-            var result = new FileParser(new StringSplitRowParser()).ParseFilesSync(@"data");
+            var result = new FileParser(new StringSplitRowParser(), new FileRetriever()).ParseFilesSync(@"data");
         }
     }
 }

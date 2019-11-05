@@ -6,5 +6,6 @@ namespace SpanStringParser
     {
         IEnumerable<string> GetFilenames(string dataFolderPath);
         IAsyncEnumerable<string> FileRowsAsync(string fileName);
+        string[] FileRows(string fileName);
     }
 }

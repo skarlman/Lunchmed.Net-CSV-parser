@@ -8,6 +8,8 @@ namespace SpanStringParser
         public IEnumerable<string> GetFilenames(string dataFolderPath) 
             => Directory.EnumerateFiles(dataFolderPath, "*.csv");
 
+        public string[] FileRows(string fileName) 
+            => File.ReadAllLines(fileName);
 
         public async IAsyncEnumerable<string> FileRowsAsync(string fileName)
         {
