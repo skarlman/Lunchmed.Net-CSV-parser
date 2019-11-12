@@ -1,4 +1,4 @@
-using SpanStringParser.RowParsers;
+using SpanStringParser.Domain.RowParsers;
 using Xunit;
 
 namespace SpanStringParser.Tests

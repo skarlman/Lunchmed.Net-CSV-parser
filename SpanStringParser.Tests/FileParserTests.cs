@@ -2,7 +2,9 @@
 using AutoFixture;
 using AutoFixture.AutoNSubstitute;
 using NSubstitute;
-using SpanStringParser.RowParsers;
+using SpanStringParser.Domain;
+using SpanStringParser.Domain.FileParsers;
+using SpanStringParser.Domain.RowParsers;
 using Xunit;
 
 namespace SpanStringParser.Tests

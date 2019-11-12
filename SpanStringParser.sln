@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser", "SpanStringParser\SpanStringParser.csproj", "{092D5BA7-34DC-4E55-BD31-832F3A36336D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.Console", "SpanStringParser\SpanStringParser.Console.csproj", "{092D5BA7-34DC-4E55-BD31-832F3A36336D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.Benchmarker", "SpanStringParser.Benchmarker\SpanStringParser.Benchmarker.csproj", "{E9EFBA57-521A-47DD-8C57-315427D1DB5B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.Tests", "SpanStringParser.Tests\SpanStringParser.Tests.csproj", "{FFFAA634-6BDD-4C7B-8542-862A90E23345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanStringParser.IntegrationTests", "SpanStringParser.IntegrationTests\SpanStringParser.IntegrationTests.csproj", "{13804170-243F-4E05-8508-84FC9F9EF926}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpanStringParser.IntegrationTests", "SpanStringParser.IntegrationTests\SpanStringParser.IntegrationTests.csproj", "{13804170-243F-4E05-8508-84FC9F9EF926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanStringParser.Domain", "SpanStringParser.Domain\SpanStringParser.Domain.csproj", "{4CE00227-5602-48F2-91A3-6A543B480DF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanStringParser.Infrastructure", "SpanStringParser.Infrastructure\SpanStringParser.Infrastructure.csproj", "{CC53CFB8-D1CC-4449-BAD4-12B22B97E66A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{86DC9880-FEB1-49E4-9275-817C4E33729E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{BF0261CB-D44A-4AA5-BFBA-12E4C0EB1F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,23 @@ Global
 		{13804170-243F-4E05-8508-84FC9F9EF926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13804170-243F-4E05-8508-84FC9F9EF926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13804170-243F-4E05-8508-84FC9F9EF926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE00227-5602-48F2-91A3-6A543B480DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE00227-5602-48F2-91A3-6A543B480DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE00227-5602-48F2-91A3-6A543B480DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE00227-5602-48F2-91A3-6A543B480DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC53CFB8-D1CC-4449-BAD4-12B22B97E66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC53CFB8-D1CC-4449-BAD4-12B22B97E66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC53CFB8-D1CC-4449-BAD4-12B22B97E66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC53CFB8-D1CC-4449-BAD4-12B22B97E66A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{092D5BA7-34DC-4E55-BD31-832F3A36336D} = {BF0261CB-D44A-4AA5-BFBA-12E4C0EB1F6A}
+		{E9EFBA57-521A-47DD-8C57-315427D1DB5B} = {BF0261CB-D44A-4AA5-BFBA-12E4C0EB1F6A}
+		{FFFAA634-6BDD-4C7B-8542-862A90E23345} = {86DC9880-FEB1-49E4-9275-817C4E33729E}
+		{13804170-243F-4E05-8508-84FC9F9EF926} = {86DC9880-FEB1-49E4-9275-817C4E33729E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3612EB16-0F2E-4BB6-953C-2792DDC42460}

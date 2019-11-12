@@ -1,12 +1,13 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoFixture;
 using AutoFixture.AutoNSubstitute;
 using NSubstitute;
-using SpanStringParser.RowParsers;
+using SpanStringParser.Domain;
+using SpanStringParser.Domain.FileParsers;
+using SpanStringParser.Domain.RowParsers;
 using Xunit;
 
 namespace SpanStringParser.IntegrationTests

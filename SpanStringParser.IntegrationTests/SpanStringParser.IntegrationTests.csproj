@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -16,7 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpanStringParser\SpanStringParser.csproj" />
+    <ProjectReference Include="..\SpanStringParser.Domain\SpanStringParser.Domain.csproj" />
+    <ProjectReference Include="..\SpanStringParser.Infrastructure\SpanStringParser.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
